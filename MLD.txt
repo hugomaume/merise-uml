@@ -1,0 +1,8 @@
+User (*id*, email, password, role)
+Student (*id*, firstname, lastname, *userId, sessionId*, photoUrl)
+Formateur (*id*, firstname, lastname, *userId)
+Session (*id*, name, startDate, endDate)
+Course (*id*, name, *sessionId)
+CourseContent (*id*, title, description, *courseId, contentUrl)
+Evaluation (*id*, type, *courseId)
+Note (*id*, value, *evaluationId, studentId*)
